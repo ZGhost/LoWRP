@@ -1,0 +1,29 @@
+"lowrp"
+{
+    "base"          "base"
+    "title"         "LoWRP"
+    "map"           ""
+    "menusystem"    "1"
+    "workshopid"    ""
+    
+    "settings"
+    {
+        1
+		{
+			"name"		"lr_difficulty"
+			"text"		"Difficulte"
+			"help"		"Regle la difficulte de 1 à 10"
+			"type"		"numeric"
+			"default"	"5"
+		}
+        
+        2
+		{
+			"name"		"lr_startmoney"
+			"text"		"Argent de départ"
+			"help"		""
+			"type"		"numeric"
+			"default"	"500"
+		}
+    }
+}
