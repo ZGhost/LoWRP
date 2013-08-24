@@ -172,11 +172,10 @@ local function HUDPaint( )
 	goodHUD:PaintText( cx, cy + by, text, vars.font, colors.text );	-- paint suit text and suit bar
 	goodHUD:PaintBar( cx, cy + by + th + vars.text_spacing, bar_width, vars.bar_height, colors.suit_bar, client:Armor( ) / 100 );
 
-	by = by + vars.bar_height + vars.bar_spacing;			-- increment text position
+	by = by + vars.bar_height + vars.bar_spacing + 30;			-- increment text position
  
-	local text = string.format( "Money: %iEuros", getMoney(client) );	-- get suit text
+	local text = string.format( "Money: %iEuros", tostring(LocalPlayer():GetMoney()) );	-- get suit text
 	goodHUD:PaintText( cx, cy + by, text, vars.font, colors.text );	-- paint suit text and suit bar
-	goodHUD:PaintBar( cx, cy + by + th + vars.text_spacing, bar_width, vars.bar_height, colors.suit_bar, getMoney(client) / 1000000 );
 
 	
 

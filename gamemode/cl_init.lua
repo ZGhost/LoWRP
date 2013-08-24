@@ -1,6 +1,6 @@
 include( "shared.lua" )
 include( "cl_hud.lua" )
-
+include( 'player.lua' )
 
 
 function GM:PostDrawViewModel( vm, ply, weapon )
@@ -14,8 +14,3 @@ function GM:PostDrawViewModel( vm, ply, weapon )
 
 end
 
-function getMoney(ply)
-
-    return 1500
-    
-end
